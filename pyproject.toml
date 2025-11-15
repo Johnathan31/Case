@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cases"
+name = "Case"
 version = "1.0.0"
-description = "A lightweight utility library for controlling text."
+description = "A lightweight library for controlling text."
 readme = "README.md"
 authors = [{ name="Johnathan31"}]
 license = { text = "MIT" }
@@ -13,7 +13,7 @@ requires-python = ">=3.8"
 dependencies = []
 
 [project.urls]
-"Homepage" = "https://github.com/johnathan31/cases"
+"Homepage" = "https://github.com/johnathan31/Case"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
