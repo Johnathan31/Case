@@ -156,7 +156,7 @@ class cased(str):
         """Checks if the text contains a specified item.
         >>> cased("Apple").contains("l") → True
         """
-        return item in self
+        return item.lower() in self.lower()
     	
     	
     # Aliases
