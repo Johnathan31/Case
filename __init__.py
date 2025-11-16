@@ -151,6 +151,12 @@ class cased(str):
     		 if i.lower() in ("a", "e", "i", "o", "u", "y"):
     		 	count += 1
     	return count
+
+    def contains(self, item: str | int | bool):
+        """Checks if the text contains a specified item.
+        >>> cased("Apple").contains("l") → True
+        """
+        return item in self
     	
     	
     # Aliases
@@ -160,13 +166,3 @@ class cased(str):
     capitalized_kebab = train
 
 
-
-'''A few examples'''
-if __name__ == "__main__":
-    a: cased = cased("hello world")
-    print(a.reverse(True))
-    s = cased("data data terminal localStorage main.py")
-    print(s.path())
-    print(cased("user profile info").train())
-    print(cased("max speed").upper_snake())
-    
